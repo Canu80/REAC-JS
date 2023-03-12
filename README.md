@@ -1,3 +1,12 @@
+# Pets (ecommerce).
+Una tieneda online para comprar todo para tu mascota.
+
+# Librerías utilizadas
+React-bootstrap (para dar estilos CSS, inlcuyendo botones).
+Sweetalert (para dar la confirmación de compra exitosa).
+FontAwesomeIcon (para agregar íconos de redes sociales).
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
