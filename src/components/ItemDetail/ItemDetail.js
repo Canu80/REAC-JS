@@ -27,7 +27,7 @@ setCounter(product?.stock === 0 ? 0 : counter)
         </div>
         <div className="buttons">
         <Button variant="outline-success" onClick={() => navigate('/') } className="button"> Volver </Button>
-        <Button variant="outline-success" disabled={counter > product.stock} onClick={() => addItem(product, counter)} className="button"> Agregar al carrito </Button>
+        <Button variant="outline-success" disabled={product.stock === 0} onClick={() => addItem(product, counter)} className="button"> Agregar al carrito </Button>
         <Button variant="outline-success" onClick={() => navigate('/Cart') } className="button"> Ir al carrito </Button>
         </div>
       </div>
