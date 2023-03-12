@@ -8,9 +8,9 @@ const Counter = ({ counter, setCounter}) => {
     setCounter(counter + 1);
   };
   const onSubtract = () => {
-    if (counter !== 0) {
+    if (counter != 1) {
       setCounter(counter - 1);
-    }
+    } 
   };
 
   return (
