@@ -14,39 +14,6 @@ ol {
 a {
   text-decoration: none;
 }
-/* 
-.productItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.tittleItem {
-  color: rgb(3, 67, 41);
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.imageItem {
-  width: 165px;
-  margin: 5px;
-}
-
-.priceItem {
-  padding: 10px;
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.detailItem {
-  display: flex;
-  padding: 10px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 14px;
-
-} */
 
 .productItem {
   display: flex;
@@ -68,7 +35,7 @@ a {
 .imageItem {
   display: flex;
   margin: 15px;
-  height: 300px;
+  height:20vmax;
   border-radius: 10px;
 }
 

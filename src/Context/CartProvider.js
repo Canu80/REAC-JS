@@ -55,6 +55,7 @@ const CartProvider = ({children}) => {
 
   const updateItem = (productid, newQuantity) => {
     const newCart = cart.map((product) => {
+      // <div key={product.id}></div>
       if (productid === product.id){
         return {
           ...product,
