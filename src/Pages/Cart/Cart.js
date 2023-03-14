@@ -11,15 +11,6 @@ import "./Cart.css";
 const Cart = () => {
   const { cart, clear, removeItem, total } = useContext(CartContext);
 
-  const showAlert = ()=>{
-    swal({
-      title: "¡Gracias por elegirnos!",
-      text: "Tu compra ha sido realizada con éxito",
-      icon: "success",
-      button: "Aceptar"
-    });
-  }
-
   const [formValue, setformValue] = useState ({
     name: '',
     phone: '',
@@ -50,6 +41,15 @@ const Cart = () => {
       
     })
     .then((response) => {
+      const showAlert = ()=>{
+        swal({
+          title: "¡Gracias por elegirnos!",
+          text: `Tu compra ha sido realizada con éxito,
+          su ID es: ${response.id}`,
+          icon: "success",
+          button: "Aceptar"
+        });
+      }
       showAlert();
       updateStocks(db);
       clear();  
